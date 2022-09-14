@@ -13,7 +13,9 @@ var i =1;
     }
     
     function remove(i) {
-        document.getElementById(`spanli${i}`).innerHTML= ''; 
+        let spanli=document.getElementById(`spanli${i}`)
+        spanli.setAttribute('hidden', 'true')
+        
     }
     function dull(){
         document.getElementById('li').innerHTML=''
